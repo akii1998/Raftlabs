@@ -7,14 +7,7 @@ const Home = () => {
   const [selectRelation, setSelectRelation] = useState("");
   const [data,setData]=useState([])
   const selectRel = [
-    "Friend",
-    "Father",
-    "Mother",
-    "Brother",
-    "Sister",
-    "Son",
-    "Daughter",
-  ];
+    "Friend"];
   const handleFirstName = (e) => {
     console.log(e.target.value)
     setFirstname(e.target.value)
@@ -29,6 +22,14 @@ const Home = () => {
   const handleSelect =(e)=>{
    console.log(e.target.value)
    setSelectRelation(e.target.value)
+  }
+  const handleAdd=(e)=>{
+  e.preventDefault();
+  setData([...data])
+  console.log(data)
+  setFirstname('')
+  setSecondname('')
+  setSelectRelation('')
   }
   return (
     <div className="Main">
@@ -48,14 +49,15 @@ const Home = () => {
             placeholder="Enter name first candidate"
             value={secondName}
             onChange={handleSecondName}
-            onFocus
           />
           <label >Choose the relation</label>
           <select value={selectRelation} onChange={handleSelect}>
             <option >Choose the relation</option>
              {selectRel?.map((ele,i)=><option key={i}>{ele}</option>)}
-              </select>
+              </select> 
+            <button onClick={handleAdd}>Add</button>
         </form>
+       
       </fieldset>
       <div className="dataContainer">
       <ul>{data?.map((e,i)=><li key={i}>{e}</li>)}</ul>

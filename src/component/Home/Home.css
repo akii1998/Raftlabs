@@ -17,6 +17,14 @@ input{
     font-weight: 800;
     font-size: 14px;
 }
+button{
+     font-weight: 800;
+    font-size: 14px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: lightblue;
+}
 select{
     border-radius: 5px;
     font-weight: 800;
