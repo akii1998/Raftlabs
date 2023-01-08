@@ -4,7 +4,7 @@ import "./Home.css";
 const Home = ({ friendNodes ,setFriendNodes, setFriendVertexes}) => {
   const [firstName, setFirstname] = useState("");
   const [secondName, setSecondname] = useState("");
-  const [selectRelation, setSelectRelation] = useState("");
+  const [selectRelation, setSelectRelation] = useState("Friend");
 
   const selectRel = [
     "Friend"];
@@ -41,7 +41,7 @@ const Home = ({ friendNodes ,setFriendNodes, setFriendVertexes}) => {
 
   setFirstname('')
   setSecondname('')
-  setSelectRelation('')
+  // setSelectRelation('')
   }
   return (
     <div className="Main">
@@ -65,7 +65,7 @@ const Home = ({ friendNodes ,setFriendNodes, setFriendVertexes}) => {
           <label >Choose the relation</label>
           <select value={selectRelation} onChange={handleSelect}>
             <option >Choose the relation</option>
-             {selectRel?.map((ele,i)=><option key={i}>{ele}</option>)}
+             {selectRel?.map((ele,i)=><option key={i} value={ele}>{ele}</option>)}
               </select> 
             <button onClick={handleAdd}>Add</button>
         </form>

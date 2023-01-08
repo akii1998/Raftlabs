@@ -8,11 +8,11 @@ function App() {
   const[friendNodes,setFriendNodes]=useState(new Set())
   const[friendVertexes,setFriendVertexes]=useState([])
 
-  useEffect(()=>{
-    const graph = new FriendGraph(Array.from(friendNodes),friendVertexes)
+  // useEffect(()=>{
+  //   const graph = new FriendGraph(Array.from(friendNodes),friendVertexes)
 
-    console.log("link",graph.getLinkedList())
-  },[friendVertexes.length])
+  //   console.log("link",Array.from(friendNodes),friendVertexes)
+  // },[friendVertexes.length])
 
 
 
@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
      <Home friendNodes={friendNodes} setFriendNodes={setFriendNodes} setFriendVertexes={setFriendVertexes}/>
-     <Find friendNodes={friendNodes}/>
+     <Find friendNodes={friendNodes}  friendVertexes={friendVertexes} />
     </div>
   );
 }
