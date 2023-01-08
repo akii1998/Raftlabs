@@ -17,6 +17,8 @@ const Find = ({friendNodes}) => {
 
     }
 
+    const userList = Array.from(friendNodes);
+
   return (
     <div>
     <h2>Find Relation</h2>
@@ -25,7 +27,7 @@ const Find = ({friendNodes}) => {
             <label htmlFor="">Enter First name</label>
             <select>
                 <option value="">Select one</option>
-                {friendNodes?.map((e,i)=><option key={i}>{e}</option>
+                {userList?.map((e,i)=><option key={i}>{e}</option>
                 )}
             </select>
         </form>
@@ -33,7 +35,7 @@ const Find = ({friendNodes}) => {
             <label htmlFor="">Enter second name</label>
             <select>
                 <option value="">Select second</option>
-                {friendNodes?.map((e,i)=>
+                {userList?.map((e,i)=>
                  <option key={i}>{e}</option>
                 )}
             </select>

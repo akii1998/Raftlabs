@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Home.css";
 
-const Home = () => {
+const Home = ({ friendNodes ,setFriendNodes, setFriendVertexes}) => {
   const [firstName, setFirstname] = useState("");
   const [secondName, setSecondname] = useState("");
   const [selectRelation, setSelectRelation] = useState("");
-  const [data,setData]=useState([])
+
   const selectRel = [
     "Friend"];
   const handleFirstName = (e) => {
@@ -25,8 +25,20 @@ const Home = () => {
   }
   const handleAdd=(e)=>{
   e.preventDefault();
-  setData([...data])
-  console.log(data)
+
+  setFriendNodes((prev)=>{
+    prev.add(firstName);
+    prev.add(secondName);
+    return prev;
+  })
+
+  setFriendVertexes((prev)=>{
+    const clone = [...prev];
+    clone.push({source:firstName,target:secondName,relation:selectRelation})
+    clone.push({source:secondName,target: firstName,relation:selectRelation})
+    return clone;
+  })
+
   setFirstname('')
   setSecondname('')
   setSelectRelation('')
@@ -60,7 +72,7 @@ const Home = () => {
        
       </fieldset>
       <div className="dataContainer">
-      <ul>{data?.map((e,i)=><li key={i}>{e}</li>)}</ul>
+     
       </div>
     </div>
   );
