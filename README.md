@@ -28,10 +28,10 @@ Site [Link](https://raft-lab-knight-moves.vercel.app/).
 ![image 5](https://user-images.githubusercontent.com/110331686/211365908-2912aac4-6146-4d29-8105-8ecc98bb1540.png)
 
 ## After entrolled all friend's name
-# Select first friend 
+#### Select first friend 
 ![image7](https://user-images.githubusercontent.com/110331686/211366435-76cef8a7-4464-4d9d-b010-c0f882140c3a.png)
 
-# Select another friend
+#### Select another friend
 ![image8](https://user-images.githubusercontent.com/110331686/211366538-00c725b6-583c-4b50-95ca-b4e24c9ea706.png)
 
 ## After entry both friend's name then click on find button for find relation of ways
