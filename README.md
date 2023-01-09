@@ -16,7 +16,10 @@ Site [Link](https://raft-lab-knight-moves.vercel.app/).
 
 ### Functionality
 
--   [ ] When you Enter the friend names , and find the no of relation between them or how many ways of friend List 
+-   [ ] When you Enter the friend names , and find the no of relation between them or how many ways of friend List
+
+## Note
+-   [ ] In this ,we have enter  friend name every time ,then find the result of that one    
 
 ![2022-06-16_10-54-22](https://user-images.githubusercontent.com/77203734/174002897-a6196a44-5656-4da5-903b-027131f6583b.png)
 

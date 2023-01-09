@@ -26,9 +26,9 @@ const Find = ({friendNodes,friendVertexes}) => {
     const userList = Array.from(friendNodes);
 
   return (
-    <div>
+    <div className='findContainer'>
     <h2>Find Relation</h2>
-    <fieldset>
+    <fieldset >
         <form action="">
             <label htmlFor="">Enter First name</label>
             <select onChange={handleFirstUser}>
