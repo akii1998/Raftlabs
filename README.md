@@ -1,4 +1,4 @@
-# Mutual Friend App  ♟
+# Mutual Friend App  
 
 Site [Link](https://raft-lab-knight-moves.vercel.app/).
 
@@ -21,10 +21,27 @@ Site [Link](https://raft-lab-knight-moves.vercel.app/).
 ## Note
 -   [ ] In this ,we have enter  friend name every time ,then find the result of that one    
 
-![2022-06-16_10-54-22](https://user-images.githubusercontent.com/77203734/174002897-a6196a44-5656-4da5-903b-027131f6583b.png)
+## Intial UI
+![image4_m](https://user-images.githubusercontent.com/110331686/211365706-b4e2f31e-2819-46bc-ac5b-71eccc837187.png)
 
-![2022-06-16_10-54-53](https://user-images.githubusercontent.com/77203734/174002888-5a47fc33-b16c-46e7-beb4-e4131ee4d245.png)
+## Enter the Name of friends(Enter First and Second friend's name then click on add button) 
+![image 5](https://user-images.githubusercontent.com/110331686/211365908-2912aac4-6146-4d29-8105-8ecc98bb1540.png)
 
-![2022-06-16_10-55-55](https://user-images.githubusercontent.com/77203734/174002882-f78e2b77-4a06-4a9a-ae9a-5f335675ad0b.png)
+## After entrolled all friend's name
+# Select first friend 
+![image7](https://user-images.githubusercontent.com/110331686/211366435-76cef8a7-4464-4d9d-b010-c0f882140c3a.png)
+
+# Select another friend
+![image8](https://user-images.githubusercontent.com/110331686/211366538-00c725b6-583c-4b50-95ca-b4e24c9ea706.png)
+
+## After entry both friend's name then click on find button for find relation of ways
+![iamge9](https://user-images.githubusercontent.com/110331686/211367123-ed5038dc-5c8c-426f-8d1b-e20d4f79b1f1.png)
+
+## Final,we got no of ways between both friends
+![final](https://user-images.githubusercontent.com/110331686/211367406-0bb8f18b-c69d-4653-a22f-cc38b9026017.png)
+
+
+
+
 
 
