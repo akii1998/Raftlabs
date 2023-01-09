@@ -1,6 +1,6 @@
 # Mutual Friend App  
 
-Site [Link](https://raft-lab-knight-moves.vercel.app/).
+Site [Link](https://raftlabs-matual-friend.vercel.app/).
 
 ## Project Stack
 
